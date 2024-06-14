@@ -1,0 +1,20 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Canada Travel Planner - Results</title>
+</head>
+<body>
+<h1>Canada Travel Planner - Results</h1>
+{% for destination in destinations %}
+<h2>{{ destination }}</h2>
+<p>{{ destination.description }}</p>
+{% endfor %}
+{% for activity in activities %}
+<h2>{{ activity }}</h2>
+<p>{{ activity.description }}</p>
+{% endfor %}
+<a href="/">Back to home</a>
+</body>
+</html>
+
