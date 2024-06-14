@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Canada Travel Planner</title>
+</head>
+<body>
+<h1>Canada Travel Planner</h1>
+<form action="/search" method="post">
+<label for="destination">Destination:</label>
+<select name="destination">
+{% for destination in destinations %}
+<option value="{{ destination.name }}">{{ destination.name }}</option>
+{% endfor %}
+</select>
+<br>
+<label for="activity">Activity:</label>
+<select name="activity">
+{% for activity in activities %}
+<option value="{{ activity.name }}">{{ activity.name }}</option>
+{% endfor %}
+</select>
+<br>
+<input type="submit" value="Search">
+</form>
+</body>
+</html>
+
+
+
